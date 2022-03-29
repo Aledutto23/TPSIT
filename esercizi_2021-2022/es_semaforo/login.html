@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        form {
+        position: relative;
+        background-color: #fff;
+        width: 35%;
+        margin: 30px auto;
+        text-align: center;
+      }
+
+      input {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        outline: none;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 4px;
+      }
+
+    </style>
+</head>
+<body>
+    <form action="" method="post" id="login-form">
+        <h1>CONTROLLO SEMAFORO</h1>
+        <input type="text" placeholder="durata luce verde" name="Scan" value="{{
+          request.form.luceVerde }}"> <br>
+          <input type="text" placeholder="durata luce gialla" name="Scan" value="{{
+            request.form.luceGialla }}"> <br>
+        <input type="text" placeholder="durata luce rossa" name="Scan" value="{{
+          request.form.luceRossa }}"> <br>
+        
+        <input class="btn btn-default" type="submit" value="Inserisci">
+      </form>
+    
+</body>
+</html>
